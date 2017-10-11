@@ -14,7 +14,9 @@
 .ready {
     display: none;
 }
-
+ ::-webkit-scrollbar .SideNav { 
+    display: none; 
+}
 .SideNav {
     height: 100%; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */
@@ -24,7 +26,7 @@
     left: 0;
     background-color: #111; /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
-    overflow-y: hidden;
+    overflow-y: scroll;
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.3s; /* 0.5 second transition effect to slide in the sidenav */
 }
@@ -146,6 +148,10 @@
         
         display: inline-block;
     }
+    .site-header .image{
+        display:  none;
+
+    }
 
 
 }
@@ -178,14 +184,8 @@
 
 }
 
-@media screen and (max-width: 1020px){
-    .site-header .image{
-        display:  none;
 
-    }
-}
-
-@media screen and (min-width: 1020px) {
+@media screen and (min-width: 1201px) {
 
     .site-header .image{
         display: inline-block;
