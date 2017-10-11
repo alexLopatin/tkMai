@@ -201,9 +201,14 @@
 }
 
 
-.site-header .txt:hover, .site-header .addition:hover, .site-header .txt:link, .site-header .addition:link, .SideNav .closebtn:hover, .SideNav .closebtn:link {
+.site-header .txt:hover, .site-header .addition:hover, .site-header .txt:link, .site-header .addition:link, .SideNav .closebtn:hover, .SideNav .closebtn:link{
     text-decoration: none;
 }
+
+.SideNav .txt:hover, .SideNav .txt:link{
+    text-decoration: none;
+}
+
 
 .post img {
     width: 100%;
