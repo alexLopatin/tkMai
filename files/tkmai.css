@@ -8,11 +8,57 @@
     border-bottom: 5px solid #e5e5e5;
 }
 
+.intro {
+    display: none;
+}
+.ready {
+    display: none;
+}
+
+.SideNav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    overflow-y: hidden;
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.3s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.site-header .image{
+    float: right;
+    display: inline-block;
+    margin-top:10px;
+    margin-right:50px;
+    -webkit-transition: scale 0.5s; /* For Safari 3.1 to 6.0 */
+    transition: transform  0.5s;
+}
+.SideNav .image{
+    margin-left:70px;
+
+    display: inline-block;
+    -webkit-transition: scale 0.5s; /* For Safari 3.1 to 6.0 */
+    transition: transform  0.5s;
+}
+
+
+.SideNav .txt{
+    color: white; 
+    
+    cursor: pointer;
+    text-align: center;
+}
+
 .site-header .addition{
     color: white;
     display: inline-block;
     text-align: center;
     width: 70%;
+    margin-top: 10px;
     margin-left: 15%;
     line-height: 20px;
     font-size: 20px;
@@ -38,6 +84,15 @@
 
 }
 
+.SideNav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+
+}
+
 @media screen and (max-width: 630px) {
 
     .site-header .txt {
@@ -59,8 +114,8 @@
         color: white;
         display: inline-block;
         text-align: center;
-        width: 90%;
-        margin-left: 5%;
+        width: 80%;
+        margin-left: 10%;
         line-height: 15px;
         font-size: 10px;
     }
@@ -71,11 +126,27 @@
 
 }
 
+.menuIcon{
+    float: left;
+    margin-left: 3%;
+    margin-top: 44px;
+    display: none;
+    cursor: pointer; 
+    
+    position: absolute;
+
+}
 @media screen and (max-width: 1200px) {
 
     .col-sm-3{
         display: none;
     }
+    .menuIcon{
+        margin-left: 3%;
+        
+        display: inline-block;
+    }
+
 
 }
 @media screen and (max-width: 1020px) and(min-width: 631px) {
@@ -117,26 +188,20 @@
 @media screen and (min-width: 1020px) {
 
     .site-header .image{
-        float: right;
         display: inline-block;
-        margin-top:10px;
-        margin-right:50px;
-        -webkit-transition: scale 2s; /* For Safari 3.1 to 6.0 */
-        transition: transform  0.5s;
     }
 
 }
 
 
 
-
-.site-header .image:hover{
+.site-header .image:hover,.SideNav .image:hover {
     transform: scale(1.05,1.05);
 
 }
 
 
-.site-header .txt:hover, .site-header .addition:hover, .site-header .txt:link, .site-header .addition:link {
+.site-header .txt:hover, .site-header .addition:hover, .site-header .txt:link, .site-header .addition:link, .SideNav .closebtn:hover, .SideNav .closebtn:link {
     text-decoration: none;
 }
 
@@ -194,6 +259,12 @@
 .site-footer .mail:hover {
     color: white;
 }
+
+li {
+    display: inline-block;
+}
+
+
 
 .nav {
     font-weight: bold;
