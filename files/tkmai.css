@@ -14,22 +14,13 @@
     text-align: center;
     width: 70%;
     margin-left: 15%;
-    line-height: 10px;
+    line-height: 20px;
     font-size: 20px;
 }
 
-.site-header .image{
-    float: right;
-    display: inline-block;
-    margin-top:10px;
-    margin-right:50px;
-    -webkit-transition: scale 2s; /* For Safari 3.1 to 6.0 */
-    transition: transform  0.5s;
-}
-
-.site-header .image:hover{
-    transform: scale(1.05,1.05);
-
+.post .image{
+    max-width:100%;
+     height:auto !important;
 }
 
 .site-header .txt {
@@ -37,13 +28,110 @@
     width: 50%;
     text-align: center;
     margin-left: 25%;
-    line-height: 80px;
-    
+    line-height: 40px;
+    margin-top:20px;
     font-size: 40px;
     color: white;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 2px;
+
+}
+
+@media screen and (max-width: 630px) {
+
+    .site-header .txt {
+        display: inline-block;
+        width: 80%;
+        text-align: center;
+        margin-left: 10%;
+        margin-top: 40px;
+        line-height: 20px;
+        
+        font-size: 20px;
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+
+    }
+    .site-header .addition{
+        color: white;
+        display: inline-block;
+        text-align: center;
+        width: 90%;
+        margin-left: 5%;
+        line-height: 15px;
+        font-size: 10px;
+    }
+    .site-header .image{
+        display:  none;
+
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+
+    .col-sm-3{
+        display: none;
+    }
+
+}
+@media screen and (max-width: 1020px) and(min-width: 631px) {
+
+    .site-header .txt {
+        display: inline-block;
+        width: 80%;
+        text-align: center;
+        margin-left: 10%;
+        line-height: 80px;
+        
+        font-size: 40px;
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+
+    }
+    .site-header .addition{
+        color: white;
+        display: inline-block;
+        text-align: center;
+        width: 90%;
+        margin-left: 5%;
+        line-height: 15px;
+        font-size: 20px;
+    }
+    
+
+}
+
+@media screen and (max-width: 1020px){
+    .site-header .image{
+        display:  none;
+
+    }
+}
+
+@media screen and (min-width: 1020px) {
+
+    .site-header .image{
+        float: right;
+        display: inline-block;
+        margin-top:10px;
+        margin-right:50px;
+        -webkit-transition: scale 2s; /* For Safari 3.1 to 6.0 */
+        transition: transform  0.5s;
+    }
+
+}
+
+
+
+
+.site-header .image:hover{
+    transform: scale(1.05,1.05);
 
 }
 
