@@ -1,5 +1,4 @@
-
-var objectsOpened = {ready: false, intro: false}
+var objectsOpened = {}
 
 
 function openNav() {
@@ -9,10 +8,11 @@ function openNav() {
 
 function OpenObject(objectName)
 {
+
 	if(!objectsOpened[objectName])
-    	document.getElementsByClassName(objectName)[0].style.display = 'block';
+    	document.getElementById(objectName).style.display = 'block';
 	else
-		document.getElementsByClassName(objectName)[0].style.display = 'none';
+		document.getElementById(objectName).style.display = 'none';
     objectsOpened[objectName] = !objectsOpened[objectName];
 }
 
