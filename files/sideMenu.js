@@ -1,25 +1,22 @@
-var IsIntroOpened = false;
-var IsReadyOpened = false;
+
+var objectsOpened = {ready: false, intro: false}
+
 
 function openNav() {
     document.getElementsByClassName("SideNav")[0].style.width = "250px";
 }
 
-function openIntro() {
-	if(!IsIntroOpened)
-    	document.getElementsByClassName("intro")[0].style.display = 'block';
+
+function OpenObject(objectName)
+{
+	if(!objectsOpened[objectName])
+    	document.getElementsByClassName(objectName)[0].style.display = 'block';
 	else
-		document.getElementsByClassName("intro")[0].style.display = 'none';
-    IsIntroOpened = !IsIntroOpened;
+		document.getElementsByClassName(objectName)[0].style.display = 'none';
+    objectsOpened[objectName] = !objectsOpened[objectName];
 }
 
-function openReady() {
-	if(!IsReadyOpened)
-    	document.getElementsByClassName("ready")[0].style.display = 'block';
-	else
-		document.getElementsByClassName("ready")[0].style.display = 'none';
-    IsReadyOpened = !IsReadyOpened;
-}
+
 
 function closeNav() {
     document.getElementsByClassName("SideNav")[0].style.width = "0";
