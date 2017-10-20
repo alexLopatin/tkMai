@@ -64,9 +64,12 @@
     font-size: 20px;
 }
 
-.post .image{
+.post img{
+    width:100%;
     max-width:100%;
      height:auto !important;
+    margin-bottom: 10px;
+    border-radius: 5px;
 }
 
 .site-header .txt {
@@ -207,13 +210,6 @@
     text-decoration: none;
 }
 
-
-.post img {
-    width: 100%;
-    margin-bottom: 10px;
-    border-radius: 5px;
-}
-
 .post b {
     display: block;
     margin-bottom: 5px;
@@ -263,9 +259,6 @@
     color: white;
 }
 
-li {
-    display: inline-block;
-}
 
 
 
